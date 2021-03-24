@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+#root {
+    height: 100%;
+}
+#app-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#GameContainer {
+    border-bottom: 1px solid black;
+}
+
+/* header stylings */
+.title {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.navbar-item-div {
+    padding: 0 10px;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navbar-item-div:hover {
+    background-color: #51b7ff;
+}
+.navbar-register-button {
+    margin: 10px;
+}
+
+/* Login and register form styling */
+.login-form,
+.register-form {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.LoginButton,
+.RegisterButton {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.LoginSpinner,
+.RegisterSpinner {
+    margin: 3px;
+}
+
+.Spinner {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+/* Landing page styling */
+#landing-page-container {
+    height: 100%;
+}
+
+#landing-page-title {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+}
+
+#cursor {
+    opacity: 0;
+}
+
+/* Home page styling */
+#home-page-container {
+    display: flex;
+}
+
+#home-left-side {
+    width: 50%;
+    display: flex;
+}
+#home-left-button {
+    align-self: center;
+    margin: 0 auto;
+}
+#vertical-line {
+    width: 5px;
+    height: calc(100vh - 72px);
+    opacity: 0.7;
+    background-color: rgb(114, 253, 114);
+    box-shadow: 0 0 20px rgb(94, 255, 0), 0 0 10px rgb(94, 255, 0);
+}
+#home-right-side {
+    width: 50%;
+    display: flex;
+}
+#home-right-button {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.play-game-button {
+    box-shadow: 0 0 30px green;
+    background-color: lightgreen;
+    color: purple;
+}
+.play-game-button:hover {
+    box-shadow: 0 0 35px rgb(7, 206, 7);
+    background-color: rgb(106, 243, 106);
+    color: purple;
+}
+
+#landing-page-container {
+    position: relative;
+}
+
+/* Leaderboard styling */
+#leaderboard-container {
+    width: 1000px;
+    margin: 25px auto;
+}
+
+
+
+/* In game styling */
+#GameContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #f4ffeb;
+}
+
+/* In game left sidebar styling */
+#left-sidebar-wrapper {
+    width: 400px;
+    height: 100%;
+    background: #000;
+    background-color: #383e40;
+}
+
+#game-link-container {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    padding-top: 10px;
+}
+
+#in-check-text {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 1.1rem;
+}
+#win-status {
+    font-weight: bold;
+    color: green;
+}
+#lose-status {
+    font-weight: bold;
+    color: red;
+}
+
+#left-sidebar-wrapper > table {
+    margin-bottom: 0;
+}
+#game-link-container > h6 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#game-link {
+    resize: none;
+    background-color: white;
+}
+#copy-button {
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+}
+
+/* In-Game Right siderbar styling */
+#right-sidebar-wrapper {
+    width: 450px;
+    height: 100%;
+    /* height: calc(100vh - 75px); */
+    background: #000;
+    background-color: #383e40;
+}
+#moves-table-container {
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+}
+#moves-header {
+    text-align: center;
+}
+
+.move-color-indicator-white {
+    background-color: white;
+    width: 50px;
+}
+.move-color-indicator-black {
+    background-color: black;
+    width: 50px;
+}
+
+.move-text {
+    text-align: center;
+}
+
+#chessboard-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #434f49;
+}
+#chessboard {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player-information-opponent {
+    height: 50px;
+    color: white;
+    /* background-color: #457b9d; */
+    align-self: center;
+    font-weight: bold;
+}
+
+#player-information-you {
+    height: 50px;
+    color: white;
+    /* background-color: #457b9d   ; */
+    align-self: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Profile tab styling */
+
+.profile-active-tab {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.profile-container {
+    width: 1000px;
+    /* flex: 1 1 auto; */
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/* View Profile styling */
+#profile-sub-container {
+    display: flex;
+    /* height: 100%; */
+    border: 1px solid #007bff;
+}
+
+#profile-user-detail {
+    padding: 25px;
+}
+
+#profile-picture-container {
+    width: 250px;
+}
+
+#profile-picture-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#profile-username-rating {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#user-graph-container {
+    width: 100%;
+    /* border: 2px solid orange; */
+}
+
+/* match-history styling */
+#match-history-container table {
+    margin-bottom: 0;
+    text-align: center;
+}
