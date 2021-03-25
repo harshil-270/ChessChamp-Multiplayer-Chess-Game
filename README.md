@@ -130,4 +130,4 @@ Project Link: [https://github.com/harshil-270/ChatApp](https://github.com/harshi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot1.PNG
+[product-screenshot]: images/Screenshot1.PNG
