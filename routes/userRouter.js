@@ -78,7 +78,6 @@ Router.post('/register', async (req, res) => {
             return res.status(200).json({ msg: 'User registered' });
         });
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ error: 'server error' });
     }
 });
@@ -96,7 +95,6 @@ Router.get('/confirmation/:token', async (req, res) => {
 
         return res.redirect(`${CLIENT_URL}/login?EmailConfirmedRedirect=true`);
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ error: 'server error' });
     }
 });
@@ -129,7 +127,6 @@ Router.post('/login', async (req, res) => {
             return res.status(400).json({ error: 'Account does not exist. Please register first' });
         }
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ error: 'server error' });
     }
 });
