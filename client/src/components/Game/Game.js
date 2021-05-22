@@ -13,15 +13,12 @@ import chess_move_sound from '../../assets/chess_move_sound.mp3';
 // learn more about what is fen in chess from here
 // https://www.chess.com/terms/fen-chess
 
-
 /*
 -first some user creates a game.
--when someone tries to join game by using game link first it is checked that game is full or not.
+-when someone tries to join game by using game link, first it is checked that game is full or not.
 -if game is not full then user is joined to that game and socket event is fired to other player that opponent has joined.
 -when any player moves the piece, after validating that move another socket event is emitted for the move.
 */
-
-
 
 function Game(props) {
     const [fen, setFen] = useState('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1');
@@ -198,7 +195,6 @@ function Game(props) {
             return;
         }
         if (chess.move(move)) {
-
             // plat the chess move sound.
             const audioEl = document.getElementsByClassName('audio-element')[0];
             audioEl.play();
@@ -236,7 +232,7 @@ function Game(props) {
     };
 
     const onMouseOverSquare = (square) => {
-        // when user puts mouse over some square then generate possible movement from that square.
+        // when user puts mouse over some square then generate possible movement from that square and display it.
         const moves = chess.moves({ square: square, verbose: true });
         const styling = {};
         for (let i = 0; i < moves.length; i++) {
@@ -317,7 +313,9 @@ function Game(props) {
                     </Table>
                     <div id='game-link-container'>
                         <h6>Share this link to anyone to play</h6>
-                        <textarea className='form-control' id='game-link' value={window.location.href} disabled={true} />
+                        <div id='game-link'>
+                            {window.location.href}{' '}
+                        </div>
                         <button
                             className='btn btn-light'
                             id='copy-button'

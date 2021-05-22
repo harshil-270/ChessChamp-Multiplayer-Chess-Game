@@ -103,8 +103,8 @@ body {
     width: 5px;
     height: calc(100vh - 72px);
     opacity: 0.7;
-    background-color: rgb(114, 253, 114);
-    box-shadow: 0 0 20px rgb(94, 255, 0), 0 0 10px rgb(94, 255, 0);
+    background-color: rgb(114, 246, 253);
+    box-shadow: 0 0 20px rgb(0, 255, 195), 0 0 10px rgb(94, 255, 0);
 }
 #home-right-side {
     width: 50%;
@@ -115,7 +115,7 @@ body {
     margin: 0 auto;
 }
 
-.play-game-button {
+/* .play-game-button {
     box-shadow: 0 0 30px green;
     background-color: lightgreen;
     color: purple;
@@ -124,7 +124,7 @@ body {
     box-shadow: 0 0 35px rgb(7, 206, 7);
     background-color: rgb(106, 243, 106);
     color: purple;
-}
+} */
 
 #landing-page-container {
     position: relative;
@@ -155,6 +155,7 @@ body {
 #left-sidebar-wrapper {
     width: 400px;
     height: 100%;
+    overflow: hidden;
     background: #000;
     background-color: #383e40;
 }
@@ -189,8 +190,11 @@ body {
     padding: 5px;
 }
 #game-link {
-    resize: none;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
     background-color: white;
+    border-radius: 2px;
 }
 #copy-button {
     margin: 10px auto;
