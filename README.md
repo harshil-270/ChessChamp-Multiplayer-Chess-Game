@@ -27,8 +27,8 @@ Online multiplayer chess game. You can play with your friend or against the comp
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href='#features'>Features</a></li>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href='#update'>Update history</a></li>
       </ul>
     </li>
     <li>
@@ -47,11 +47,14 @@ Online multiplayer chess game. You can play with your friend or against the comp
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
-There are 2 modes in this game.<br />
- 1. Play with friend(Need to register first)<br />
- 2. Play against computer(Used Minimax algorithm to generate move. Improved using alpha beta pruning)<br />
+### Features
+-There are 2 modes in this game.<br />
+&nbsp;&nbsp;&nbsp;1. Play with friend(Need to register first)<br />
+&nbsp;&nbsp;&nbsp;2. Play against computer(Used Minimax algorithm to generate move. Improved using alpha beta pruning)<br />
+-Rating graph, View matches history.<br/>
+-basic functionality like register/login, forget password
 
 
 ### Built With
@@ -95,7 +98,7 @@ npm install
 
 Now create *.env* file and fill all the details.
 ```env
-MONGO_URI = PUT_YOUR_MONGODB_ATLAS_CONNECTION_STRING_HERE
+MONGO_URI = PUT_YOUR_MONGODB_CONNECTION_STRING_HERE
 JWT_SECRET = PUT_JWT_SECRET_HERE
 MESSAGE_KEY = MESSGAE_ENCRYPTION_KEY
 GMAIL_USER = YOUR_GMAIL_ADDRESS
@@ -130,4 +133,4 @@ Project Link: [https://github.com/harshil-270/ChatApp](https://github.com/harshi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot1.PNG
+[product-screenshot]: images/Screenshot1.PNG
