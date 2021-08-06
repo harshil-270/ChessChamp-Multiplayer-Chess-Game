@@ -12,13 +12,13 @@ const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
         origin: 'http://localhost:3000',
+        credentials: true,
     },
 });
 
 io.on('connection', (socket) => {
     socket.on('join', ({ gameId }) => {
         socket.join(gameId);
-        // whenever a player joins fire "userJoined" event so that opponent can know that some player has joined.
         io.to(gameId).emit('userJoined');
     });
     socket.on('postMove', (data) => {
@@ -44,10 +44,14 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // connect to mongodb database
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err) => {
-    if (err) throw err;
-    console.log('MongoDB is connected');
-});
+mongoose.connect(
+    process.env.MONGO_URI,
+    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
+    (err) => {
+        if (err) throw err;
+        console.log('MongoDB is connected');
+    }
+);
 
 const port = process.env.PORT || 5000;
 server.listen(port, () => {
