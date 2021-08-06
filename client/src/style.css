@@ -9,7 +9,6 @@ body {
     min-height: 100%;
 }
 
-
 #root {
     height: 100%;
 }
@@ -136,8 +135,6 @@ body {
     margin: 25px auto;
 }
 
-
-
 /* In game styling */
 #GameContainer {
     width: 100%;
@@ -190,11 +187,8 @@ body {
     padding: 5px;
 }
 #game-link {
-    height: 30px;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    resize: none;
     background-color: white;
-    border-radius: 2px;
 }
 #copy-button {
     margin: 10px auto;
