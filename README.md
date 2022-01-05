@@ -1,5 +1,5 @@
 # Multiplayer-Chess-Game
-Online multiplayer chess game. You can play with your friend or against the computer.
+Online multiplayer chess game. You can play against your friend or against the computer.
 
 <!-- PROJECT LOGO -->
 <br />
