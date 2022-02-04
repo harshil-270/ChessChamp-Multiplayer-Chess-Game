@@ -1,6 +1,13 @@
 # Multiplayer-Chess-Game
 Online multiplayer chess game. You can play against your friend or against the computer.
 
+### TO-DO
+- [ ] Add/Edit Profile Picture
+- [ ] Improve UI/UX
+- [ ] Improve evalution strategy for Minimax algo
+- [ ] Add various game statistics in profile page
+
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -48,12 +55,6 @@ Online multiplayer chess game. You can play against your friend or against the c
 ## About The Project
 
 ![Product Name Screen Shot][product-screenshot]
-
-### TO-DO
-- [ ] Add/Edit Profile Picture
-- [ ] Improve UI/UX
-- [ ] Improve evalution strategy for Minimax algo
-- [ ] Add various game statistics in profile page
 
 ### Features
 -There are 2 modes in this game.<br />
