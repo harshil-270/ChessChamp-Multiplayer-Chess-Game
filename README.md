@@ -49,13 +49,18 @@ Online multiplayer chess game. You can play against your friend or against the c
 
 ![Product Name Screen Shot][product-screenshot]
 
+### TO-DO
+- [ ] Add/Edit Profile Picture
+- [ ] Improve UI/UX
+- [ ] Improve evalution strategy for Minimax algo
+- [ ] Add various game statistics in profile page
+
 ### Features
 -There are 2 modes in this game.<br />
 &nbsp;&nbsp;&nbsp;1. Play with friend(Need to register first)<br />
 &nbsp;&nbsp;&nbsp;2. Play against computer(Used Minimax algorithm to generate move. Improved using alpha beta pruning)<br />
 -Rating graph, View matches history.<br/>
--basic functionality like register/login, forget password
-
+-Basic functionality like register/login, forget password
 
 ### Built With
 
